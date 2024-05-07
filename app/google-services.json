@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "272942998303",
+    "firebase_url": "https://fall-detection-and-alert-50b6d-default-rtdb.firebaseio.com",
+    "project_id": "fall-detection-and-alert-50b6d",
+    "storage_bucket": "fall-detection-and-alert-50b6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272942998303:android:148f85e4105080e6cac62a",
+        "android_client_info": {
+          "package_name": "com.example.fallrequest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu72mif-mkcnanC0Gh59zOcakg7KEOanw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

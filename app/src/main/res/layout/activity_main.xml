@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Elemento de texto fijo para el eje X -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X-axis:"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Elemento de texto para el valor del eje X -->
+    <TextView
+        android:id="@+id/xUIvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del eje X"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Elemento de texto fijo para el eje Y -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-axis:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Elemento de texto para el valor del eje Y -->
+    <TextView
+        android:id="@+id/yUIValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del eje Y"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Elemento de texto fijo para el eje Z -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z-axis:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Elemento de texto para el valor del eje Z -->
+    <TextView
+        android:id="@+id/zUIvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del eje Z"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Imagen correspondiente al eje Z -->
+    <ImageView
+        android:id="@+id/imageViewZ"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/axes"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Elemento de texto fijo para la fecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Elemento de texto para mostrar la fecha -->
+    <TextView
+        android:id="@+id/timeUIvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/timeView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/reloj"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Elemento de texto fijo para el flag -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLAG:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Elemento de texto para mostrar el valor del flag -->
+    <TextView
+        android:id="@+id/flagUIvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del flag"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/flagView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/alert2"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/temperatureUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pngwing_com"
+        tools:layout_editor_absoluteY="145dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/moistureUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureUI"
+        app:srcCompat="@drawable/ic_pngwing_com_1" />
+
+    <ImageView
+        android:id="@+id/timeUI"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moistureUI"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <TextView
+        android:id="@+id/xUIvalue"
+        android:layout_width="154dp"
+        android:layout_height="21dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/temperatureUI"
+        tools:layout_editor_absoluteY="156dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/yUIvalue"
+        android:layout_width="154dp"
+        android:layout_height="21dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/temperatureUI"
+        tools:layout_editor_absoluteY="156dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/zUIvalue"
+        android:layout_width="152dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="62dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/moistureUI"
+        app:layout_constraintTop_toBottomOf="@+id/xUIvalue" />
+
+    <TextView
+        android:id="@+id/timeUIvalue"
+        android:layout_width="153dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/timeUI"
+        app:layout_constraintTop_toBottomOf="@+id/zUIvalue" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureUI"
+        app:layout_constraintStart_toStartOf="@+id/temperatureUI" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        app:layout_constraintBottom_toTopOf="@+id/moistureUI"
+        app:layout_constraintStart_toStartOf="@+id/moistureUI" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintBottom_toTopOf="@+id/timeUI"
+        app:layout_constraintStart_toStartOf="@+id/timeUI" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By: TFM GODS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+-->
